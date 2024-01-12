@@ -236,4 +236,4 @@ root@ubuntu-xenial:/home/vagrant/bitcoin-docker# curl -d '{"jsonrpc":"2.0","id":
 
 ## Requirements
 
-To run this you need both `docker` and `docker-compose`. It was tested on a clean Ubuntu 16.04 with the docker-ce package from Docker. 
+To run this you need both `docker` and `docker-compose`. It was tested on a clean Ubuntu 20.04 with the docker-ce package from Docker. 
