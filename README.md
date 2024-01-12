@@ -1,8 +1,8 @@
-# Multinode / Multiwallet Bitcoin regtest network
+# Multinode / Multiwallet Dogecoin regtest network
 
-This repository allows you run a full bitcoin network in an isolated environment. It uses bitcoin's regtest capability to setup an isolated bitcoin network, and then uses docker to setup a network with 3 nodes.
+This repository allows you run a full dogecoin network in an isolated environment. It uses dogecoin's regtest capability to setup an isolated dogecoin network, and then uses docker to setup a network with 3 nodes.
 
-This is useful because normally in regtest mode you would generate all coins in the same wallet as where you'd send the coins. With this setup, you can use one node to generate the coins and then send it to one of the other nodes, which can then again send it to another node to simulate more real-life bitcoin usage.
+This is useful because normally in regtest mode you would generate all coins in the same wallet as where you'd send the coins. With this setup, you can use one node to generate the coins and then send it to one of the other nodes, which can then again send it to another node to simulate more real-life dogecoin usage.
 
 ## Usage
 
@@ -22,7 +22,7 @@ to start all the containers. This will start the bitcoin nodes, and expose RPC o
 
 ## Samples
 
-Note these samples use `curl` to exercise the API, but this would usually be `bitcoin-cli`. We're using `curl` so we don't have a dependency on bitcoin in the host.
+Note these samples use `curl` to exercise the API, but this would usually be `dogecoin-cli`. We're using `curl` so we don't have a dependency on dogecoin in the host.
 
 ### Initial block count
 
@@ -75,7 +75,7 @@ root@ubuntu-xenial:/home/vagrant/bitcoin-docker# curl -d '{"jsonrpc":"2.0","id":
 {"result":101,"error":null,"id":"1"}
 ```
 
-### Send bitcoin from miner to another node
+### Send dogecoin from miner to another node
 
 Now we're going to generate an address in another node. Note that we use port **18401** (node1) instead of 18400:
 ```
